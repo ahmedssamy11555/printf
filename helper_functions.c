@@ -1,16 +1,27 @@
 #include "main.h"
 
+/**
+* number_length - calculates length of the number
+* @number: number to get the length of
+* Return: length of the number
+*/
 
 int number_length(int number)
 {
-    int lenght = 0;
-    while (number != 0)
-    {
-        number /= 10;
-        lenght++;
-    }
-    return lenght;
+int lenght = 0;
+while (number != 0)
+{
+number /= 10;
+lenght++;
 }
+return (lenght);
+}
+
+/**
+* print_postive_or_negative_number - prints positive and negative numbers
+* @postive_or_negative_number: number to print
+*/
+
 
 
 void print_postive_or_negative_number(int postive_or_negative_number)
@@ -21,8 +32,8 @@ int *digits;
 int i;
 if (postive_or_negative_number < 0)
 {
-    _putchar('-');
-    postive_or_negative_number = -postive_or_negative_number;
+_putchar('-');
+postive_or_negative_number = -postive_or_negative_number;
 }
 
 
