@@ -18,13 +18,13 @@ return (lenght);
 }
 
 /**
-* print_postive_or_negative_number - prints positive and negative numbers
+* print_positive_or_negative_number - prints positive and negative numbers
 * @postive_or_negative_number: number to print
 */
 
 
 
-void print_postive_or_negative_number(int postive_or_negative_number)
+void print_positive_or_negative_number(int postive_or_negative_number)
 {
 
 int number_lenght;
