@@ -1,7 +1,11 @@
 #include "main.h"
 
 
-
+/**
+* _printf - function that simulates the stdio real printf function
+* @format: pointer to character
+* Return: number of characters passed
+*/
 
 
 int _printf(const char *format, ...)
