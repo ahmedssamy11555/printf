@@ -1,5 +1,9 @@
 #include "main.h"
 
+
+
+
+
 int _printf(const char *format, ...)
 {
 va_list args;
@@ -7,6 +11,11 @@ int args_number = 0;
 int i;
 char one_character;
 char *str;
+int user__d_number;
+int user_i_number;
+
+
+
 
 va_start(args, format);
 
@@ -41,6 +50,14 @@ _putchar(' ');
 break;
 case '%':
 _putchar('%');
+break;
+case 'd':
+user__d_number = va_arg(args, int);
+print_postive_or_negative_number(user__d_number);
+break;
+case 'i':
+user_i_number = va_arg(args, int);
+print_postive_or_negative_number(user_i_number);
 break;
 default:
 _putchar('?');
